@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="smartyhome" customModuleProvider="target">
+            <connections>
+                <outlet property="currentDateLabel" destination="bbf-QI-ggu" id="P2v-iW-d4H"/>
+                <outlet property="homeWelcomeLabel" destination="Pdz-cL-iSZ" id="Q4A-hd-b5i"/>
+                <outlet property="tableView" destination="N7u-0m-6Mi" id="yl0-9W-2vj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JULY 17, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-QI-ggu">
+                    <rect key="frame" x="20" y="44" width="77" height="16.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Jordan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdz-cL-iSZ">
+                    <rect key="frame" x="20" y="60.5" width="259.5" height="44"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N7u-0m-6Mi">
+                    <rect key="frame" x="0.0" y="104.5" width="414" height="757.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N7u-0m-6Mi" secondAttribute="trailing" id="4oD-hs-2cP"/>
+                <constraint firstItem="Pdz-cL-iSZ" firstAttribute="leading" secondItem="bbf-QI-ggu" secondAttribute="leading" id="8Nc-NH-8n8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N7u-0m-6Mi" secondAttribute="bottom" id="Fm0-Ga-iB0"/>
+                <constraint firstItem="N7u-0m-6Mi" firstAttribute="top" secondItem="Pdz-cL-iSZ" secondAttribute="bottom" id="Iv1-a7-8s6"/>
+                <constraint firstItem="N7u-0m-6Mi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QmE-nC-4UX"/>
+                <constraint firstItem="bbf-QI-ggu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XqY-HZ-mqk"/>
+                <constraint firstItem="Pdz-cL-iSZ" firstAttribute="top" secondItem="bbf-QI-ggu" secondAttribute="bottom" id="ajv-eD-kg6"/>
+                <constraint firstItem="bbf-QI-ggu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vv1-Kc-gu5"/>
+            </constraints>
+            <point key="canvasLocation" x="80" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F45439C72603E3C000C62AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45439C62603E3C000C62AB4 /* AppDelegate.swift */; };
+		F45439D12603E3C000C62AB4 /* smartyhome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45439CF2603E3C000C62AB4 /* smartyhome.xcdatamodeld */; };
+		F45439D32603E3C100C62AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45439D22603E3C100C62AB4 /* Assets.xcassets */; };
+		F45439D62603E3C100C62AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45439D42603E3C100C62AB4 /* LaunchScreen.storyboard */; };
+		F45439E12603E3C100C62AB4 /* smartyhomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45439E02603E3C100C62AB4 /* smartyhomeTests.swift */; };
+		F45439EC2603E3C100C62AB4 /* smartyhomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45439EB2603E3C100C62AB4 /* smartyhomeUITests.swift */; };
+		F4543A012603E9B700C62AB4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45439FF2603E9B700C62AB4 /* MainViewController.swift */; };
+		F4543A022603E9B700C62AB4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4543A002603E9B700C62AB4 /* MainViewController.xib */; };
+		F4543A082603F90500C62AB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4543A062603F90500C62AB4 /* HomeViewController.swift */; };
+		F4543A092603F90500C62AB4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4543A072603F90500C62AB4 /* HomeViewController.xib */; };
+		F4543A0E2604056800C62AB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4543A0D2604056800C62AB4 /* Room.swift */; };
+		F4543A1326040A3100C62AB4 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4543A1226040A3100C62AB4 /* RoomViewModel.swift */; };
+		F4543A1926040EF800C62AB4 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4543A1726040EF800C62AB4 /* RoomTableViewCell.swift */; };
+		F4543A1A26040EF800C62AB4 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4543A1826040EF800C62AB4 /* RoomTableViewCell.xib */; };
+		F4543A5E26043DC000C62AB4 /* NunitoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A4F26043DC000C62AB4 /* NunitoSans-LightItalic.ttf */; };
+		F4543A5F26043DC000C62AB4 /* NunitoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5026043DC000C62AB4 /* NunitoSans-BoldItalic.ttf */; };
+		F4543A6026043DC000C62AB4 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5126043DC000C62AB4 /* NunitoSans-ExtraLight.ttf */; };
+		F4543A6126043DC000C62AB4 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5226043DC000C62AB4 /* NunitoSans-Light.ttf */; };
+		F4543A6226043DC000C62AB4 /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5326043DC000C62AB4 /* NunitoSans-BlackItalic.ttf */; };
+		F4543A6326043DC000C62AB4 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5426043DC000C62AB4 /* NunitoSans-ExtraBold.ttf */; };
+		F4543A6426043DC000C62AB4 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5526043DC000C62AB4 /* NunitoSans-Regular.ttf */; };
+		F4543A6526043DC000C62AB4 /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5626043DC000C62AB4 /* NunitoSans-SemiBoldItalic.ttf */; };
+		F4543A6626043DC000C62AB4 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5726043DC000C62AB4 /* NunitoSans-Italic.ttf */; };
+		F4543A6726043DC000C62AB4 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5826043DC000C62AB4 /* OFL.txt */; };
+		F4543A6826043DC000C62AB4 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5926043DC000C62AB4 /* NunitoSans-Bold.ttf */; };
+		F4543A6926043DC000C62AB4 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5A26043DC000C62AB4 /* NunitoSans-SemiBold.ttf */; };
+		F4543A6A26043DC000C62AB4 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5B26043DC000C62AB4 /* NunitoSans-Black.ttf */; };
+		F4543A6B26043DC000C62AB4 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5C26043DC000C62AB4 /* NunitoSans-ExtraBoldItalic.ttf */; };
+		F4543A6C26043DC000C62AB4 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4543A5D26043DC000C62AB4 /* NunitoSans-ExtraLightItalic.ttf */; };
+		F4543A712604419D00C62AB4 /* MStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4543A702604419D00C62AB4 /* MStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F45439DD2603E3C100C62AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45439BB2603E3C000C62AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45439C22603E3C000C62AB4;
+			remoteInfo = smartyhome;
+		};
+		F45439E82603E3C100C62AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45439BB2603E3C000C62AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45439C22603E3C000C62AB4;
+			remoteInfo = smartyhome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F45439C32603E3C000C62AB4 /* smartyhome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartyhome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45439C62603E3C000C62AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F45439D02603E3C000C62AB4 /* smartyhome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smartyhome.xcdatamodel; sourceTree = "<group>"; };
+		F45439D22603E3C100C62AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F45439D52603E3C100C62AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F45439D72603E3C100C62AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45439DC2603E3C100C62AB4 /* smartyhomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartyhomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45439E02603E3C100C62AB4 /* smartyhomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartyhomeTests.swift; sourceTree = "<group>"; };
+		F45439E22603E3C100C62AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45439E72603E3C100C62AB4 /* smartyhomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartyhomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45439EB2603E3C100C62AB4 /* smartyhomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartyhomeUITests.swift; sourceTree = "<group>"; };
+		F45439ED2603E3C100C62AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45439FF2603E9B700C62AB4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F4543A002603E9B700C62AB4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F4543A062603F90500C62AB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4543A072603F90500C62AB4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F4543A0D2604056800C62AB4 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		F4543A1226040A3100C62AB4 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		F4543A1726040EF800C62AB4 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		F4543A1826040EF800C62AB4 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		F4543A4F26043DC000C62AB4 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4543A5026043DC000C62AB4 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4543A5126043DC000C62AB4 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F4543A5226043DC000C62AB4 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		F4543A5326043DC000C62AB4 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F4543A5426043DC000C62AB4 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4543A5526043DC000C62AB4 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4543A5626043DC000C62AB4 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4543A5726043DC000C62AB4 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		F4543A5826043DC000C62AB4 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F4543A5926043DC000C62AB4 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4543A5A26043DC000C62AB4 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4543A5B26043DC000C62AB4 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		F4543A5C26043DC000C62AB4 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4543A5D26043DC000C62AB4 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F4543A702604419D00C62AB4 /* MStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45439C02603E3C000C62AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439D92603E3C100C62AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439E42603E3C100C62AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45439BA2603E3C000C62AB4 = {
+			isa = PBXGroup;
+			children = (
+				F45439C52603E3C000C62AB4 /* smartyhome */,
+				F45439DF2603E3C100C62AB4 /* smartyhomeTests */,
+				F45439EA2603E3C100C62AB4 /* smartyhomeUITests */,
+				F45439C42603E3C000C62AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45439C42603E3C000C62AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45439C32603E3C000C62AB4 /* smartyhome.app */,
+				F45439DC2603E3C100C62AB4 /* smartyhomeTests.xctest */,
+				F45439E72603E3C100C62AB4 /* smartyhomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45439C52603E3C000C62AB4 /* smartyhome */ = {
+			isa = PBXGroup;
+			children = (
+				F4543A7E26044A8200C62AB4 /* Utils */,
+				F4543A7D26044A3A00C62AB4 /* ViewModel */,
+				F4543A79260449C900C62AB4 /* View */,
+				F4543A78260449AC00C62AB4 /* Model */,
+				F4543A4E26043DC000C62AB4 /* Nunito_Sans */,
+				F45439C62603E3C000C62AB4 /* AppDelegate.swift */,
+				F45439D22603E3C100C62AB4 /* Assets.xcassets */,
+				F45439D42603E3C100C62AB4 /* LaunchScreen.storyboard */,
+				F45439D72603E3C100C62AB4 /* Info.plist */,
+				F45439CF2603E3C000C62AB4 /* smartyhome.xcdatamodeld */,
+			);
+			path = smartyhome;
+			sourceTree = "<group>";
+		};
+		F45439DF2603E3C100C62AB4 /* smartyhomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45439E02603E3C100C62AB4 /* smartyhomeTests.swift */,
+				F45439E22603E3C100C62AB4 /* Info.plist */,
+			);
+			path = smartyhomeTests;
+			sourceTree = "<group>";
+		};
+		F45439EA2603E3C100C62AB4 /* smartyhomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F45439EB2603E3C100C62AB4 /* smartyhomeUITests.swift */,
+				F45439ED2603E3C100C62AB4 /* Info.plist */,
+			);
+			path = smartyhomeUITests;
+			sourceTree = "<group>";
+		};
+		F4543A4E26043DC000C62AB4 /* Nunito_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				F4543A4F26043DC000C62AB4 /* NunitoSans-LightItalic.ttf */,
+				F4543A5026043DC000C62AB4 /* NunitoSans-BoldItalic.ttf */,
+				F4543A5126043DC000C62AB4 /* NunitoSans-ExtraLight.ttf */,
+				F4543A5226043DC000C62AB4 /* NunitoSans-Light.ttf */,
+				F4543A5326043DC000C62AB4 /* NunitoSans-BlackItalic.ttf */,
+				F4543A5426043DC000C62AB4 /* NunitoSans-ExtraBold.ttf */,
+				F4543A5526043DC000C62AB4 /* NunitoSans-Regular.ttf */,
+				F4543A5626043DC000C62AB4 /* NunitoSans-SemiBoldItalic.ttf */,
+				F4543A5726043DC000C62AB4 /* NunitoSans-Italic.ttf */,
+				F4543A5826043DC000C62AB4 /* OFL.txt */,
+				F4543A5926043DC000C62AB4 /* NunitoSans-Bold.ttf */,
+				F4543A5A26043DC000C62AB4 /* NunitoSans-SemiBold.ttf */,
+				F4543A5B26043DC000C62AB4 /* NunitoSans-Black.ttf */,
+				F4543A5C26043DC000C62AB4 /* NunitoSans-ExtraBoldItalic.ttf */,
+				F4543A5D26043DC000C62AB4 /* NunitoSans-ExtraLightItalic.ttf */,
+			);
+			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		F4543A78260449AC00C62AB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4543A0D2604056800C62AB4 /* Room.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4543A79260449C900C62AB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F45439FF2603E9B700C62AB4 /* MainViewController.swift */,
+				F4543A002603E9B700C62AB4 /* MainViewController.xib */,
+				F4543A062603F90500C62AB4 /* HomeViewController.swift */,
+				F4543A072603F90500C62AB4 /* HomeViewController.xib */,
+				F4543A1726040EF800C62AB4 /* RoomTableViewCell.swift */,
+				F4543A1826040EF800C62AB4 /* RoomTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4543A7D26044A3A00C62AB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4543A1226040A3100C62AB4 /* RoomViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4543A7E26044A8200C62AB4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4543A702604419D00C62AB4 /* MStyle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45439C22603E3C000C62AB4 /* smartyhome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45439F02603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhome" */;
+			buildPhases = (
+				F45439BF2603E3C000C62AB4 /* Sources */,
+				F45439C02603E3C000C62AB4 /* Frameworks */,
+				F45439C12603E3C000C62AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartyhome;
+			productName = smartyhome;
+			productReference = F45439C32603E3C000C62AB4 /* smartyhome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F45439DB2603E3C100C62AB4 /* smartyhomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45439F32603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhomeTests" */;
+			buildPhases = (
+				F45439D82603E3C100C62AB4 /* Sources */,
+				F45439D92603E3C100C62AB4 /* Frameworks */,
+				F45439DA2603E3C100C62AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45439DE2603E3C100C62AB4 /* PBXTargetDependency */,
+			);
+			name = smartyhomeTests;
+			productName = smartyhomeTests;
+			productReference = F45439DC2603E3C100C62AB4 /* smartyhomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F45439E62603E3C100C62AB4 /* smartyhomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45439F62603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhomeUITests" */;
+			buildPhases = (
+				F45439E32603E3C100C62AB4 /* Sources */,
+				F45439E42603E3C100C62AB4 /* Frameworks */,
+				F45439E52603E3C100C62AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45439E92603E3C100C62AB4 /* PBXTargetDependency */,
+			);
+			name = smartyhomeUITests;
+			productName = smartyhomeUITests;
+			productReference = F45439E72603E3C100C62AB4 /* smartyhomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45439BB2603E3C000C62AB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F45439C22603E3C000C62AB4 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F45439DB2603E3C100C62AB4 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F45439C22603E3C000C62AB4;
+					};
+					F45439E62603E3C100C62AB4 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F45439C22603E3C000C62AB4;
+					};
+				};
+			};
+			buildConfigurationList = F45439BE2603E3C000C62AB4 /* Build configuration list for PBXProject "smartyhome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45439BA2603E3C000C62AB4;
+			productRefGroup = F45439C42603E3C000C62AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45439C22603E3C000C62AB4 /* smartyhome */,
+				F45439DB2603E3C100C62AB4 /* smartyhomeTests */,
+				F45439E62603E3C100C62AB4 /* smartyhomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45439C12603E3C000C62AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4543A6A26043DC000C62AB4 /* NunitoSans-Black.ttf in Resources */,
+				F4543A6726043DC000C62AB4 /* OFL.txt in Resources */,
+				F4543A6626043DC000C62AB4 /* NunitoSans-Italic.ttf in Resources */,
+				F4543A6026043DC000C62AB4 /* NunitoSans-ExtraLight.ttf in Resources */,
+				F4543A6C26043DC000C62AB4 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
+				F4543A1A26040EF800C62AB4 /* RoomTableViewCell.xib in Resources */,
+				F4543A5E26043DC000C62AB4 /* NunitoSans-LightItalic.ttf in Resources */,
+				F45439D62603E3C100C62AB4 /* LaunchScreen.storyboard in Resources */,
+				F4543A6526043DC000C62AB4 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				F45439D32603E3C100C62AB4 /* Assets.xcassets in Resources */,
+				F4543A5F26043DC000C62AB4 /* NunitoSans-BoldItalic.ttf in Resources */,
+				F4543A6126043DC000C62AB4 /* NunitoSans-Light.ttf in Resources */,
+				F4543A6926043DC000C62AB4 /* NunitoSans-SemiBold.ttf in Resources */,
+				F4543A6B26043DC000C62AB4 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
+				F4543A6426043DC000C62AB4 /* NunitoSans-Regular.ttf in Resources */,
+				F4543A092603F90500C62AB4 /* HomeViewController.xib in Resources */,
+				F4543A6326043DC000C62AB4 /* NunitoSans-ExtraBold.ttf in Resources */,
+				F4543A6226043DC000C62AB4 /* NunitoSans-BlackItalic.ttf in Resources */,
+				F4543A022603E9B700C62AB4 /* MainViewController.xib in Resources */,
+				F4543A6826043DC000C62AB4 /* NunitoSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439DA2603E3C100C62AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439E52603E3C100C62AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45439BF2603E3C000C62AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4543A712604419D00C62AB4 /* MStyle.swift in Sources */,
+				F4543A082603F90500C62AB4 /* HomeViewController.swift in Sources */,
+				F45439D12603E3C000C62AB4 /* smartyhome.xcdatamodeld in Sources */,
+				F4543A1926040EF800C62AB4 /* RoomTableViewCell.swift in Sources */,
+				F4543A0E2604056800C62AB4 /* Room.swift in Sources */,
+				F45439C72603E3C000C62AB4 /* AppDelegate.swift in Sources */,
+				F4543A1326040A3100C62AB4 /* RoomViewModel.swift in Sources */,
+				F4543A012603E9B700C62AB4 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439D82603E3C100C62AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45439E12603E3C100C62AB4 /* smartyhomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45439E32603E3C100C62AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45439EC2603E3C100C62AB4 /* smartyhomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F45439DE2603E3C100C62AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45439C22603E3C000C62AB4 /* smartyhome */;
+			targetProxy = F45439DD2603E3C100C62AB4 /* PBXContainerItemProxy */;
+		};
+		F45439E92603E3C100C62AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45439C22603E3C000C62AB4 /* smartyhome */;
+			targetProxy = F45439E82603E3C100C62AB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F45439D42603E3C100C62AB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45439D52603E3C100C62AB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45439EE2603E3C100C62AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F45439EF2603E3C100C62AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F45439F12603E3C100C62AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F45439F22603E3C100C62AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F45439F42603E3C100C62AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartyhome.app/smartyhome";
+			};
+			name = Debug;
+		};
+		F45439F52603E3C100C62AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartyhome.app/smartyhome";
+			};
+			name = Release;
+		};
+		F45439F72603E3C100C62AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartyhome;
+			};
+			name = Debug;
+		};
+		F45439F82603E3C100C62AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartyhomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkit.smartyhomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartyhome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45439BE2603E3C000C62AB4 /* Build configuration list for PBXProject "smartyhome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45439EE2603E3C100C62AB4 /* Debug */,
+				F45439EF2603E3C100C62AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45439F02603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45439F12603E3C100C62AB4 /* Debug */,
+				F45439F22603E3C100C62AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45439F32603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45439F42603E3C100C62AB4 /* Debug */,
+				F45439F52603E3C100C62AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45439F62603E3C100C62AB4 /* Build configuration list for PBXNativeTarget "smartyhomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45439F72603E3C100C62AB4 /* Debug */,
+				F45439F82603E3C100C62AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F45439CF2603E3C000C62AB4 /* smartyhome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F45439D02603E3C000C62AB4 /* smartyhome.xcdatamodel */,
+			);
+			currentVersion = F45439D02603E3C000C62AB4 /* smartyhome.xcdatamodel */;
+			path = smartyhome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F45439BB2603E3C000C62AB4 /* Project object */;
+}
